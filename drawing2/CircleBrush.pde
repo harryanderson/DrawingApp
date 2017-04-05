@@ -2,8 +2,8 @@ class Circle {
   
   float x;
   float y;
-  int radius = 50;
-  int max_size = 300;
+  int radius = 50 + (int)random(100);
+  int max_size = 400;
   
   int alpha = 255;
   
@@ -18,7 +18,7 @@ class Circle {
   void draw() {
     
     noStroke();
-    fill((int)random(255), (int)random(255), (int)random(255), alpha);
+    fill((int)random(100,255), (int)random(100,255), (int)random(100,255), alpha);
     ellipse(x, y, radius%max_size, radius%max_size);
     
   }
